@@ -9,6 +9,6 @@ entries:
     name: inspect-pod-nodejs
     type: application
     urls:
-    - inspect-pod-nodejs-0.1.0.tgz
+    - charts/inspect-pod-nodejs-0.1.0.tgz
     version: 0.1.0
 generated: "2025-07-16T16:40:58.87277791-03:00"
