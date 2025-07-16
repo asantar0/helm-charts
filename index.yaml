@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  inspect-pod-nodejs:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-16T16:40:58.873540525-03:00"
+    description: Get information from pods in a Kubernetes cluster
+    digest: 97bbbe2952629ebdd4632021c1738f3b8ca11963cc5794031b5a86cbc64a96a3
+    name: inspect-pod-nodejs
+    type: application
+    urls:
+    - inspect-pod-nodejs-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-07-16T16:40:58.87277791-03:00"
