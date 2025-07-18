@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/asantar0/inspect-charts.git
+    repoURL: https://github.com/asantar0/helm-charts.git
     targetRevision: main
-    path: charts/inspect-pod-nodejs
+    path: inspect-pod-nodejs
     helm:
       valueFiles:
         - values-prod.yaml
