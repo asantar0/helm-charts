@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inspect-pod-nodejs-test
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/asantar0/inspect-charts.git
+    targetRevision: main
+    path: charts/inspect-pod-nodejs
+    helm:
+      valueFiles:
+        - values-test.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: testing
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
